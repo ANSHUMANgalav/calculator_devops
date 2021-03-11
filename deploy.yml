@@ -1,0 +1,11 @@
+---
+- name: Pull and Run docker image of anshumangalav/devcalc
+  hosts: all
+  tasks:
+    - name: Pull anshumangalav/devcalc
+      docker_image:
+        name: anshumangalav/devcalc
+        source: pull
+
+
+
